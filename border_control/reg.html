@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация и Регистрация</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container_h">
+                <a href="index.html" class="logo">Кожаная Мастерская</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="shop.html">Магазин</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <div class="login-form">
+                    <h2>Авторизация</h2>
+                    <input type="text" id="login-username" placeholder="Имя пользователя">
+                    <input type="password" id="login-password" placeholder="Пароль">
+                    <button onclick="login()">Войти</button>
+                    <p>Нет аккаунта? <span onclick="showRegisterForm()">Зарегистрироваться</span></p>
+                    <p class="message" id="login-message"></p>
+                </div>
+                <div class="register-form hidden">
+                    <h2>Регистрация</h2>
+                    <input type="text" id="register-username" placeholder="Имя пользователя">
+                    <input type="email" id="register-email" placeholder="Email">
+                    <input type="password" id="register-password" placeholder="Пароль">
+                    <input type="password" id="register-confirm-password" placeholder="Подтвердите пароль">
+                    <button onclick="register()">Зарегистрироваться</button>
+                    <p>Уже есть аккаунт? <span onclick="showLoginForm()">Войти</span></p>
+                    <p class="message" id="register-message"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container_h">
+           <p>&copy; 2024 Кожаная Мастерская. Все права защищены.</p>
+            <p>Контактный телефон: +7 (XXX) XXX-XX-XX</p>
+            <p>Email: info@leathercraft.com</p>
+        </div>
+    </footer>
+
+    <script src="registr.js"></script>
+</body>
+</html>

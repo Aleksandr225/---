@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Магазин изделий из кожи ручной работы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">Кожаная Мастерская</a>
+                <ul class="nav-links">
+                   <li><a href="index.html">Главная</a></li>
+                    <li><a href="shop.html">Магазин</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="user">
+                <img src="images/user.png" alt="Иконка пользователя">
+                <a href="reg.html" class="reg">Войти/Зарегестрироваться</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <div class="container">
+                <h2>Связаться с нами</h2>
+                <p>Если у вас есть вопросы или предложения, пожалуйста, свяжитесь с нами, заполнив форму ниже, или используя контактную информацию.</p>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Контактная информация</h3>
+                    <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+                    <p>Email: info@leathercraft.com</p>
+                    <p>Адрес: Улица Примерная, 123, Город, Страна</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Кожаная Мастерская. Все права защищены.</p>
+            <p>Контактный телефон: +7 (XXX) XXX-XX-XX</p>
+            <p>Email: info@leathercraft.com</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="com.js"></script>
+</body>
+</html>

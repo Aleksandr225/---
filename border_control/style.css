@@ -1,0 +1,390 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #283618;
+    background-color: white;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: #BC6C25;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    transition: 0.5s linear;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #DDA15E;
+}
+
+/* Шапка сайта */
+header {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    font-size: 1em;
+    color: #283618;
+    transition: color 0.3s;
+}
+.nav-links li a:hover{
+    color: #606C38;
+}
+
+
+/* Основная часть */
+main {
+    padding: 20px 0;
+}
+
+/* Герой */
+.hero {
+    background: linear-gradient(to right, #FEFAE0, #BC6C25);
+    padding: 50px 0;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 40%;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Популярные товары */
+.featured-products {
+    padding: 50px 0;
+}
+
+.featured-products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    border: rgba(0, 0, 0, 0.46) 1px solid;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.product-card h3{
+   margin-bottom: 5px;
+}
+/* Страница магазина */
+.product-listing {
+    padding: 50px 0;
+}
+
+.product-listing h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* Страница о нас */
+.about-us {
+    padding: 50px 0;
+}
+.about-us .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-content img{
+     max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+/* Страница контакты */
+.contact-form {
+    padding: 50px 0;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact-form form{
+     display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+.contact-form .form-group {
+    margin-bottom: 20px;
+    
+}
+
+.contact-form .form-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+.contact-form .form-group input,
+.contact-form .form-group textarea{
+    width: 100%;
+    padding: 10px;
+     border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.contact-form .contact-info{
+    margin-top: 30px;
+    text-align: center;
+}
+/* Футер */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+footer p{
+    margin: 5px 0;
+}
+/* Адаптивность */
+@media (max-width: 768px) {
+     .container {
+        width: 95%;
+    }
+     .hero-content {
+        max-width: 100%;
+        padding-right: 0;
+    }
+    .hero-image {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+     .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+     .contact-form form {
+        width: 90%;
+    }
+}
+
+
+/* hero slider */
+.hero-slider {
+    flex: 1;
+    max-width: 40%;
+    position: relative;
+    overflow: hidden; /* Обрезаем слайды, которые не видны */
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: auto;
+    text-align: center; /* По центру изображения в слайде */
+}
+.slide img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Измените медиа-запрос */
+@media (max-width: 768px) {
+    .hero-slider {
+        max-width: 100%;
+    }
+}
+
+
+
+.popup {
+    width: 40%;
+    height: 40%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    width: 70%;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.popup-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.popup img {
+    max-width: 30%;
+    height: 3;
+    margin-bottom: 20px;
+}
+
+.popup h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.popup p {
+    margin-bottom: 20px;
+}
+
+.add-to-cart-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.close-popup {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+
+.user {
+    margin-right: 20px ;
+}
+
+.user > img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
